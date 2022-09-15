@@ -1,0 +1,10 @@
+{% for book in books %}
+    name : {{book.issued_from__name}}<br>
+    id : {{book.issued_from__id}}<br>
+    library_location : {{book.issued_from__location}}<br>
+    book_name : {{book.book_name}}<br>
+    book_author : {{book.book_author}}<br>
+    book_issuedfrom : {{book.issued_from__id}}<br>
+
+    <hr>
+ {% endfor %}  
